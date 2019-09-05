@@ -68,19 +68,24 @@ h1, h2, h3, h4, h5 {
 	border: 1px solid blue !important;
 } */
 .container {
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 1200px;
 	width: 75%;
-	margin: 0 auto;
+    margin: 0 auto; */
+    width: 880px;
+    /* TB LR */
+    margin: 0 auto;
+  
 	
   }
   
   /* header */
   header{
 	  display: flex;
-	  justify-content: space-evenly;
+      justify-content: space-evenly;
+      width: 880px;
   }
   
   header nav {
@@ -113,101 +118,94 @@ h1, h2, h3, h4, h5 {
   
   /* cta */
   .cta{
-	display:flex;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 	width: 100%;
-	height: 350px;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
   }
   
   .cta .cta-text {
-	font-size: 77px;
-	height: 350px;
-	text-align: center;
+	font-size: 35px;
+    width: 850px;
+    text-align: left;
+    
   }
-  
-  .cta .cta-text button {
-	background: white;
-	vertical-align: top;
-	margin-top: 6px;
-	padding: 8px 44px;
-	font-size: 17px;
-	border: 1px solid black;
-	cursor: pointer;
-  }
-  
-  .cta .cta-text button:hover {
-	background: black;
-	color: white;
+
+  .cta p{
+    font-size: 16px;
+    width: 850px;
+    text-align: left;
+    line-height: 20px;
+    padding-bottom: 25px;
   }
   
   .cta img {
-	height: 350px;
-	/* display: inline-block;
-	margin-top: 69px; */
+	width: 850px;
+  }
+
+  .main-content{
+      height: 875px;
+      width: 850px;
+  }
+
+  .main-content .ServiceBoxes{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+    }
+  
+  .main-content .ServiceBoxes .ServiceBox{
+      width: 45%;
+      height: 250px;
+      margin-top: 30px;
+      background: lightgrey;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: baseline;
+  }
+
+  .ServiceBox h2{
+      margin-left: 10px;
+  }
+
+  .ServiceBox p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  .ServiceBox button {
+	background: white;	
+    margin-top: 6px;
+    margin-left: 10px;
+	padding: 8px;
+	font-size: 17px;
+	border: 2px solid black;
+    cursor: pointer;
+  }
+
+  .BottomSection{
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-evenly;
+    width: 880px;
+  }
+
+
+  .BottomSection div p{
+      width: 400px;
+      line-height: 20px;
   }
   
-  .main-content {
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: space-evenly;
-	  height: 500px;
-	  }
-  
-  .main-content .top-content {
-	display: flex;
-	justify-content: space-between;
-	
+  .BottomSection div li{
+    line-height: 30px;
   }
-  
-  .main-content .top-content .text-content {
-	display: flex;
-	flex-direction: column;
-	width: 48%;
-	
-  }
-  
-  .main-content .top-content .text-content:last-child {
-	/* margin-right: 0; */
-	display: flex;
-  }
-  
- 
-  /* talk to jaytee about this */
-  .main-content .middle-img {
-	display: flex;
-	align-content: center;
-	
-  }
-  
-  .main-content .bottom-content {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-  }
-  
-  .main-content .bottom-content .text-content {
-	display: flex;
-	width: 30%;
-	flex-direction: column;
-  }
-  
-  .main-content .bottom-content .text-content:last-child {
-	margin-right: 0;
-  }
-  
-  .contact {
-	display:flex;
-	height: 150px;
-	flex-direction: column;
-	align-content: space-around;
-  }
-  
-  /* .contact p {
-	  
-	} */
   
   footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
 	text-align: center;
 	font-size: 14px;
   }
-  
